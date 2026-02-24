@@ -184,7 +184,7 @@ class positional_sound: sound_item {
 		// Apply pitch (with behind_pitch_decrease if enabled)
 		// rotated_pos already has rotation and y_is_elevation swap applied
 		if (this.loaded) {
-			float effective_pitch_decrease = this.behind_pitch_decrease >= 0 ? this.behind_pitch_decrease : this.m.behind_pitch_decrease;
+			float effective_pitch_decrease = this.behind_pitch_decrease > 0 ? this.behind_pitch_decrease : this.m.behind_pitch_decrease;
 			float final_pitch = this.pitch;
 			if (effective_pitch_decrease > 0) {
 				// After rotation and y_is_elevation swap:
