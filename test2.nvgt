@@ -16,7 +16,7 @@ void main() {
 		wait(5);
 		if (key_pressed(KEY_ESCAPE))
 			exit();
-		if (key_pressed(KEY_N)) s.position=vector(random(0, 30), random(0, 30), random(0, 0));
+		if (key_pressed(KEY_N)) s.position = vector(random(0, 30), random(0, 30), random(0, 0));
 		if (key_pressed(KEY_LEFT))
 			x--;
 		if (key_pressed(KEY_RIGHT))
@@ -29,6 +29,6 @@ void main() {
 			z--;
 		if (key_pressed(KEY_PAGEUP))
 			z++;
-		p.listener=vector(x, y, z);
-			}
+		p.listener = vector(x, y, z);
+	}
 }
